@@ -1,0 +1,34 @@
+# Netlify Configuration for InstaPDF Web Application
+
+[build]
+  base = "website"
+  publish = "public"
+  functions = "netlify/functions"
+
+# Route API endpoints directly to Netlify Serverless Functions
+[[redirects]]
+  from = "/api/extract"
+  to = "/.netlify/functions/extract"
+  status = 200
+
+[[redirects]]
+  from = "/api/proxy-image"
+  to = "/.netlify/functions/proxy-image"
+  status = 200
+
+# Single Page App routing fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Cache-Control headers for static assets
+[[headers]]
+  for = "/icons/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, immutable"
+
+[[headers]]
+  for = "/style.css"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"

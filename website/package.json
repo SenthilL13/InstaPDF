@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "node test-website.js"
+    "test": "node test-website.js",
+    "test:netlify": "node test-netlify-functions.js"
   },
   "keywords": [
     "instagram",
