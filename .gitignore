@@ -1,0 +1,18 @@
+# Node / Dependencies
+node_modules/
+package-lock.json
+
+# Logs & Diagnostics
+*.log
+diag-*
+npm-debug.log*
+
+# Environment & OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Agent / Editor cache
+.agents/
+.idea/
+.vscode/

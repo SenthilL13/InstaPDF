@@ -1,0 +1,20 @@
+{
+  "name": "instapdf-web",
+  "version": "1.2.0",
+  "description": "InstaPDF - Instagram Post to PDF Downloader & Multi-Slide Carousel Exporter Web Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test-website.js"
+  },
+  "keywords": [
+    "instagram",
+    "pdf",
+    "downloader",
+    "carousel",
+    "export",
+    "converter"
+  ],
+  "author": "InstaPDF Team",
+  "license": "MIT"
+}
